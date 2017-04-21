@@ -1,0 +1,26 @@
+{
+  "name": "moviestore",
+  "version": "1.0.0",
+  "description": "a movie api ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+  "express":"*",
+  "mongoose":"*",
+  "bcryptjs":"*",
+  "cors":"*",
+  "jsonwebtoken":"*",
+  "body-parser":"*",
+  "passport":"*",
+  "passport-jwt":"*"
+},
+  "devDependencies": {
+    "mocha": "^1.21.3",
+    "should": "^4.0.4",
+    "supertest": "^0.13.0"
+  },
+  "author": "raed",
+  "license": "ISC"
+}
