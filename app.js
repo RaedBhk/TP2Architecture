@@ -1,17 +1,17 @@
-var app = require('./src/lib/app')
+var app = require('./src/lib/app');
 const mongoose = require('mongoose');
-var mongoUrl ='mongodb://127.0.0.1:27017/movies';
+var mongoUrl = 'mongodb://ec2-54-154-221-146.eu-west-1.compute.amazonaws.com:27017/movies';
 // index route
-app.get('/', function (req,res) {
+app.get('/', function (req, res) {
     res.send('invalid endpoint');
-})
+});
 mongoose.connect(mongoUrl, {
 
     mongoose: {
         safe: true
     }
 
-}, function(err) {
+}, function (err) {
     if (err) {
         return console.log('Mongoose - connection error:', err);
     }
@@ -21,8 +21,6 @@ mongoose.connection.on('connected', function () {
 
 });
 //start server
-app.listen(3000,function () {
-
+app.listen(3000, function () {
     console.log('server started on port 3000');
-
 });
