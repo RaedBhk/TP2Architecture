@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+const cors = require("cors");
 
 //Body-Parser
 //this will let us get the data from a POST
@@ -61,5 +62,6 @@ app.post('/movies/:id/actors', movies.addActor);
 app.delete('/movies/:id/actors/:mid', movies.deleteActor);
 
 app.use('/elastic', elastic);
+app.use(cors());
 
 module.exports = app;

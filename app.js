@@ -1,5 +1,6 @@
 var app = require('./src/lib/app');
 const mongoose = require('mongoose');
+
 var mongoUrl = 'mongodb://ec2-34-248-57-210.eu-west-1.compute.amazonaws.com:27017/movies';
 // index route
 app.get('/', function (req, res) {
