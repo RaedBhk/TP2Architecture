@@ -10,7 +10,7 @@
   "dependencies": {
     "bcryptjs": "*",
     "body-parser": "*",
-    "cors": "*",
+    "cors": "^2.8.3",
     "elasticsearch": "^13.0.0",
     "express": "*",
     "jsonwebtoken": "*",
