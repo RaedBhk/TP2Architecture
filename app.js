@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 var mongoUrl = 'mongodb://ec2-52-18-65-50.eu-west-1.compute.amazonaws.com:27017/movies';
 // index route
 app.get('/', function (req, res) {
-    res.status(200).json({message: 'Film Store API is running !', Status: "green"});
+    res.status(200).json({message: 'Film Store API is running!', Status: "green"});
 });
 mongoose.connect(mongoUrl, {
 
