@@ -9,7 +9,7 @@ module.exports = {
         Movie.find(function (err, movies) {
             if (err) return res.status(400).json(err);
             res.status(200).json(movies);
-        });
+        }).populate('actors');
     },
 
 
