@@ -1,4 +1,4 @@
-FROM node:boron
+FROM node:latest
 
 #run apt-get update
 
